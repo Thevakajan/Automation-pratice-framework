@@ -14,6 +14,8 @@ import java.util.Date;
 
 import static org.monte.media.FormatKeys.*;
 import static org.monte.media.VideoFormatKeys.*;
+import static utils.PageBase.VideoReording_FOLDER;
+
 
 public class MyScreenRecorder extends ScreenRecorder {
     public static ScreenRecorder screenRecorder;
@@ -42,7 +44,7 @@ public class MyScreenRecorder extends ScreenRecorder {
     }
 
     public static void startRecording(String methodName) throws Exception {
-        File file = new File("./recordings/");
+        File file = new File(VideoReording_FOLDER);
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = screenSize.width;

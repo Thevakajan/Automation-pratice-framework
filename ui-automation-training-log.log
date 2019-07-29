@@ -24,3 +24,27 @@
 2019-07-29 16:53:18 INFO  TestBase:68 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@63e2203c] output={null}]
 2019-07-29 16:53:18 INFO  TestBase:59 - Closing Browser
 2019-07-29 16:53:18 INFO  TestBase:61 - Browser Closed
+2019-07-29 17:10:35 INFO  TestBase:32 - Initiate Browser
+2019-07-29 17:10:43 INFO  TestBase:38 - Browser Initiated
+2019-07-29 17:10:43 INFO  TestBase:49 - Test name: testGenderlInformation
+2019-07-29 17:10:43 INFO  TestBase:68 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@63e2203c] output={null}]
+2019-07-29 17:10:43 INFO  TestBase:59 - Closing Browser
+2019-07-29 17:10:43 INFO  TestBase:61 - Browser Closed
+2019-07-29 17:12:57 INFO  TestBase:32 - Initiate Browser
+2019-07-29 17:13:04 INFO  TestBase:38 - Browser Initiated
+2019-07-29 17:13:04 INFO  TestBase:49 - Test name: testGenderlInformation
+2019-07-29 17:13:04 INFO  TestBase:68 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@63e2203c] output={null}]
+2019-07-29 17:13:04 INFO  TestBase:59 - Closing Browser
+2019-07-29 17:13:05 INFO  TestBase:61 - Browser Closed
+2019-07-29 17:14:06 INFO  TestBase:32 - Initiate Browser
+2019-07-29 17:14:13 INFO  TestBase:38 - Browser Initiated
+2019-07-29 17:14:13 INFO  TestBase:49 - Test name: testGenderlInformation
+2019-07-29 17:14:13 INFO  TestBase:68 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@63e2203c] output={null}]
+2019-07-29 17:14:13 INFO  TestBase:59 - Closing Browser
+2019-07-29 17:14:14 INFO  TestBase:61 - Browser Closed
+2019-07-29 17:18:43 INFO  TestBase:32 - Initiate Browser
+2019-07-29 17:18:50 INFO  TestBase:38 - Browser Initiated
+2019-07-29 17:18:50 INFO  TestBase:49 - Test name: testGenderlInformation
+2019-07-29 17:18:50 INFO  TestBase:68 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@63e2203c] output={null}]
+2019-07-29 17:18:50 INFO  TestBase:59 - Closing Browser
+2019-07-29 17:18:51 INFO  TestBase:61 - Browser Closed
