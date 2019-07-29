@@ -18,7 +18,6 @@ public class PageBase {
     private static String baseUrl="https://opensource-demo.orangehrmlive.com/";
     private static String driverPath="src"+ File.separator+"test"+ File.separator+"resources"+ File.separator+"driver"+File.separator;
     protected static String uploadFilepath = System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"fileUpload";
-//    public static  String VideoReording_FOLDER = "src"+ File.separator+"test"+ File.separator+"resources"+ File.separator+"VideoReording";
     public static String VideoReording_FOLDER = System.getProperty("user.dir") + "/src/test/resources/VideoReording/";
     private static String osType=System.getProperty("os.Type",Constants.WINDOWS);
     private static String driverType=System.getProperty("browser.type",Constants.CHROME);
