@@ -49,7 +49,7 @@ public class TestBase extends PageBase {
         LOGGER.info("Test name: " + method.getName());
     }
     @AfterMethod(alwaysRun=true)
-    public void endTest(ITestResult result){
+    public void endTest(ITestResult result) throws Exception {
         if(!result.isSuccess()){
             extentReport.endTest(extentTest);
             extentTest.log(LogStatus.FAIL,extentTest.addScreenCapture(ExtentReportFunctions.getFilePath()));
@@ -59,6 +59,8 @@ public class TestBase extends PageBase {
         LOGGER.info("Closing Browser");
         PageBase.closeDriver();
         LOGGER.info("Browser Closed");
+        SendEmail.SendEmail();
+        LOGGER.info("Email successfully Send");
 
     }
 

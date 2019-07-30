@@ -72,3 +72,22 @@
 2019-07-29 22:44:46 INFO  TestBase:68 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@3d99d22e] output={null}]
 2019-07-29 22:44:46 INFO  TestBase:59 - Closing Browser
 2019-07-29 22:44:47 INFO  TestBase:61 - Browser Closed
+2019-07-30 08:49:42 INFO  TestBase:32 - Initiate Browser
+2019-07-30 08:49:52 INFO  TestBase:38 - Browser Initiated
+2019-07-30 08:49:52 INFO  TestBase:49 - Test name: testGenderlInformation
+2019-07-30 08:49:55 INFO  TestBase:68 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@57855c9a] output={null}]
+2019-07-30 08:49:55 INFO  TestBase:59 - Closing Browser
+2019-07-30 08:49:55 INFO  TestBase:61 - Browser Closed
+2019-07-30 10:05:09 INFO  TestBase:32 - Initiate Browser
+2019-07-30 10:05:18 INFO  TestBase:38 - Browser Initiated
+2019-07-30 10:05:18 INFO  TestBase:49 - Test name: testGenderlInformation
+2019-07-30 10:05:18 INFO  TestBase:70 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@72b6cbcc] output={null}]
+2019-07-30 10:05:18 INFO  TestBase:59 - Closing Browser
+2019-07-30 10:05:19 INFO  TestBase:61 - Browser Closed
+2019-07-30 10:08:30 INFO  TestBase:32 - Initiate Browser
+2019-07-30 10:08:38 INFO  TestBase:38 - Browser Initiated
+2019-07-30 10:08:38 INFO  TestBase:49 - Test name: testGenderlInformation
+2019-07-30 10:08:38 INFO  TestBase:70 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@72b6cbcc] output={null}]
+2019-07-30 10:08:38 INFO  TestBase:59 - Closing Browser
+2019-07-30 10:08:39 INFO  TestBase:61 - Browser Closed
+2019-07-30 10:08:43 INFO  TestBase:63 - Email successfully Send
