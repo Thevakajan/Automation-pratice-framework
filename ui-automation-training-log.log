@@ -253,3 +253,21 @@
 2019-08-07 10:44:20 INFO  TestBase:40 - Browser Initiated
 2019-08-07 10:44:20 INFO  TestBase:52 - Test name: testGenderlInformation
 2019-08-07 10:44:21 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=FAILURE method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@3c130745] output={null}]
+2019-08-07 11:00:53 INFO  TestBase:32 - Initiate Browser
+2019-08-07 11:01:01 INFO  TestBase:40 - Browser Initiated
+2019-08-07 11:01:01 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-07 11:01:02 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@5ae50ce6] output={null}]
+2019-08-07 11:01:02 INFO  TestBase:62 - Closing Browser
+2019-08-07 11:01:03 INFO  TestBase:64 - Browser Closed
+2019-08-07 11:24:19 INFO  TestBase:32 - Initiate Browser
+2019-08-07 11:24:27 INFO  TestBase:40 - Browser Initiated
+2019-08-07 11:24:27 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-07 11:24:29 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@30ee2816] output={null}]
+2019-08-07 11:24:29 INFO  TestBase:62 - Closing Browser
+2019-08-07 11:24:29 INFO  TestBase:64 - Browser Closed
+2019-08-07 11:33:58 INFO  TestBase:32 - Initiate Browser
+2019-08-07 11:34:06 INFO  TestBase:40 - Browser Initiated
+2019-08-07 11:34:06 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-07 11:34:07 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@5bd03f44] output={null}]
+2019-08-07 11:34:07 INFO  TestBase:62 - Closing Browser
+2019-08-07 11:34:08 INFO  TestBase:64 - Browser Closed

@@ -5,8 +5,6 @@ import pages.LoginPage;
 import utils.MyScreenRecorder;
 import utils.TestBase;
 
-import static utils.MyScreenRecorder.*;
-
 public class Tests extends TestBase {
     @Test
     public void testGenderlInformation() throws Exception {
