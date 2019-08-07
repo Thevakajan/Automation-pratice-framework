@@ -190,3 +190,66 @@
 2019-08-04 00:06:22 INFO  TestBase:70 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@7ce3cb8e] output={null}]
 2019-08-04 00:06:22 INFO  TestBase:59 - Closing Browser
 2019-08-04 00:06:24 INFO  TestBase:61 - Browser Closed
+2019-08-06 10:54:37 INFO  TestBase:32 - Initiate Browser
+2019-08-06 10:56:22 INFO  TestBase:32 - Initiate Browser
+2019-08-06 10:57:01 INFO  TestBase:32 - Initiate Browser
+2019-08-06 10:57:28 INFO  TestBase:38 - Browser Initiated
+2019-08-06 10:57:28 INFO  TestBase:49 - Test name: testGenderlInformation
+2019-08-06 10:57:44 INFO  TestBase:70 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@7ce3cb8e] output={null}]
+2019-08-06 10:57:44 INFO  TestBase:59 - Closing Browser
+2019-08-06 10:57:47 INFO  TestBase:61 - Browser Closed
+2019-08-06 13:51:40 INFO  TestBase:32 - Initiate Browser
+2019-08-06 13:51:55 INFO  TestBase:38 - Browser Initiated
+2019-08-06 13:51:55 INFO  TestBase:49 - Test name: testGenderlInformation
+2019-08-06 13:51:57 INFO  TestBase:70 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@6ef888f6] output={null}]
+2019-08-06 13:51:57 INFO  TestBase:59 - Closing Browser
+2019-08-06 13:52:00 INFO  TestBase:61 - Browser Closed
+2019-08-06 16:42:34 INFO  TestBase:32 - Initiate Browser
+2019-08-06 16:42:45 INFO  TestBase:38 - Browser Initiated
+2019-08-06 16:42:45 INFO  TestBase:50 - Test name: testGenderlInformation
+2019-08-06 16:42:46 INFO  TestBase:71 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@7ce3cb8e] output={null}]
+2019-08-06 16:42:46 INFO  TestBase:60 - Closing Browser
+2019-08-06 16:42:49 INFO  TestBase:62 - Browser Closed
+2019-08-06 16:43:31 INFO  TestBase:32 - Initiate Browser
+2019-08-06 16:44:37 INFO  TestBase:32 - Initiate Browser
+2019-08-06 16:44:49 INFO  TestBase:40 - Browser Initiated
+2019-08-06 16:44:49 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-06 16:44:50 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@7ce3cb8e] output={null}]
+2019-08-06 16:44:51 INFO  TestBase:62 - Closing Browser
+2019-08-06 16:44:56 INFO  TestBase:64 - Browser Closed
+2019-08-06 16:47:01 INFO  TestBase:32 - Initiate Browser
+2019-08-06 16:47:13 INFO  TestBase:40 - Browser Initiated
+2019-08-06 16:47:13 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-06 16:47:15 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@7ce3cb8e] output={null}]
+2019-08-06 16:47:15 INFO  TestBase:62 - Closing Browser
+2019-08-06 16:47:18 INFO  TestBase:64 - Browser Closed
+2019-08-06 16:49:45 INFO  TestBase:32 - Initiate Browser
+2019-08-06 16:50:34 INFO  TestBase:32 - Initiate Browser
+2019-08-06 16:50:42 INFO  TestBase:40 - Browser Initiated
+2019-08-06 16:50:42 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-06 16:50:43 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@69b2283a] output={null}]
+2019-08-06 16:50:43 INFO  TestBase:62 - Closing Browser
+2019-08-06 16:50:44 INFO  TestBase:64 - Browser Closed
+2019-08-06 16:54:57 INFO  TestBase:32 - Initiate Browser
+2019-08-06 16:55:06 INFO  TestBase:40 - Browser Initiated
+2019-08-06 16:55:06 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-06 16:55:07 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@69b2283a] output={null}]
+2019-08-06 16:55:07 INFO  TestBase:62 - Closing Browser
+2019-08-06 16:55:08 INFO  TestBase:64 - Browser Closed
+2019-08-06 16:55:31 INFO  TestBase:32 - Initiate Browser
+2019-08-06 17:02:32 INFO  TestBase:32 - Initiate Browser
+2019-08-06 17:02:41 INFO  TestBase:40 - Browser Initiated
+2019-08-06 17:02:41 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-06 17:02:42 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@48e4374] output={null}]
+2019-08-06 17:02:42 INFO  TestBase:62 - Closing Browser
+2019-08-06 17:02:43 INFO  TestBase:64 - Browser Closed
+2019-08-07 10:42:29 INFO  TestBase:32 - Initiate Browser
+2019-08-07 10:42:37 INFO  TestBase:40 - Browser Initiated
+2019-08-07 10:42:37 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-07 10:42:39 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=SUCCESS method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@4a22f9e2] output={null}]
+2019-08-07 10:42:39 INFO  TestBase:62 - Closing Browser
+2019-08-07 10:42:40 INFO  TestBase:64 - Browser Closed
+2019-08-07 10:44:13 INFO  TestBase:32 - Initiate Browser
+2019-08-07 10:44:20 INFO  TestBase:40 - Browser Initiated
+2019-08-07 10:44:20 INFO  TestBase:52 - Test name: testGenderlInformation
+2019-08-07 10:44:21 INFO  TestBase:73 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=FAILURE method=Tests.testGenderlInformation()[pri:0, instance:tests.Tests@3c130745] output={null}]

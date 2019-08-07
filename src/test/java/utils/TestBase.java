@@ -30,12 +30,15 @@ public class TestBase extends PageBase {
     @BeforeMethod
     public void loadBrowser() {
         LOGGER.info("Initiate Browser");
+
         try {
             PageBase.initiateDriver();
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
+//        driver.manage().deleteAllCookies();
         LOGGER.info("Browser Initiated");
+
     }
 
     @BeforeMethod
