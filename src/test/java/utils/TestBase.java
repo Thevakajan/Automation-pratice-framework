@@ -28,7 +28,7 @@ public class TestBase extends PageBase {
     }
 
     @BeforeMethod
-    public void loadBrowser() {
+    public void loadBrowser(Method method) {
         LOGGER.info("Initiate Browser");
 
         try {
@@ -36,6 +36,7 @@ public class TestBase extends PageBase {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
+        extentTest=extentReport.startTest("Start Report : "+ method.getName());
 //        driver.manage().deleteAllCookies();
         LOGGER.info("Browser Initiated");
 
@@ -56,7 +57,8 @@ public class TestBase extends PageBase {
         if(!result.isSuccess()){
             extentReport.endTest(extentTest);
             extentTest.log(LogStatus.FAIL,extentTest.addScreenCapture(ExtentReportFunctions.getFilePath()));
-
+            extentTest.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed", result.getThrowable().getMessage());
+            extentReport.endTest(extentTest);
 
         }
         LOGGER.info("Closing Browser");
