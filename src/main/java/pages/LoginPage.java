@@ -15,7 +15,7 @@ public class LoginPage extends PageBase {
     private static By hdrLogin = By.id("logInPanelHeading");
     private static By txtUserName = By.id("txtUsername");
     private static By txtPassword = By.id("txtPassword");
-    private static By btnLogin = By.id("btnLogin");
+    private static By btnLogin = By.id("btnxLogin");
     private static By alert = By.id("spanMessage");
 
     public static boolean isLoginPageDisplay() {

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Default suite" parallel="methods" verbose="3">
     <listeners>
-        <listener class-name="tests.TestListerner" />
+        <listener class-name="tests.TestJiraListener" />
     </listeners>
-    <test name=" First test" skipfailedinvocationcounts="false">
+    <test name="my hub spot test chrome" parallel="none" thread-count="5">
+        <parameter name="browser" value="chrome" />
         <classes>
-            <class
-                    name="tests.Tests">
-                <methods>
-                    <include name="testCase" />
-                </methods>
-            </class>
+            <class name="tests.Tests" />
         </classes>
     </test>
 </suite>

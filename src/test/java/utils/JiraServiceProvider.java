@@ -1,37 +1,32 @@
 package utils;
 
 import net.rcarz.jiraclient.*;
+import net.rcarz.jiraclient.Issue.FluentCreate;
 
-public class JiraServiceProvider{
-    private JiraClient jira;
-    private String project;
+public class JiraServiceProvider {
 
-    public JiraServiceProvider(String jiraUrl, String username, String password, String project) {
-        // create basic authentication object
-        BasicCredentials creds = new BasicCredentials(username, password);
-        // initialize the jira client with the url and the credentials
-        jira = new JiraClient(jiraUrl, creds);
-        this.project = project;
-    }
+	public JiraClient jira;
+	public String project;
 
-    public void createJiraIssue(String issueType, String summary, String description, String reporterName) {
-        /* Create a new issue. */
-        try {
-            Issue.FluentCreate newIssueFluentCreate = jira.createIssue(project, issueType);
-            // Add the summary
-            newIssueFluentCreate.field(Field.SUMMARY, summary);
-            // Add the description
-            newIssueFluentCreate.field(Field.DESCRIPTION, description);
-            // Add the reporter
-            newIssueFluentCreate.field(Field.REPORTER, reporterName);
-            // create the issue in the jira server
-            Issue newIssue = newIssueFluentCreate.execute();
+	public JiraServiceProvider(String jiraUrl, String username, String password, String project) {
+		BasicCredentials creds = new BasicCredentials(username, password);
+		jira = new JiraClient(jiraUrl, creds);
+		this.project = project;
+	}
 
-            System.out.println("New issue created. Jira ID : " + newIssue);
+	public void createJiraTicket(String issueType, String summary, String description, String reporterName) {
 
-        } catch (JiraException e) {
-            e.printStackTrace();
-        }
-    }
+		try {
+			FluentCreate fleuntCreate = jira.createIssue(project, issueType);
+			fleuntCreate.field(Field.SUMMARY, summary);
+			fleuntCreate.field(Field.DESCRIPTION, description);
+			Issue newIssue = fleuntCreate.execute();
+			System.out.println("new issue created in jira with ID: " + newIssue);
+
+		} catch (JiraException e) {
+			e.printStackTrace();
+		}
+
+	}
 
 }

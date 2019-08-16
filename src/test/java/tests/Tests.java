@@ -1,13 +1,17 @@
 package tests;
 
+
 import com.relevantcodes.extentreports.LogStatus;
 import org.testng.annotations.Test;
 import pages.LoginPage;
+import utils.JiraPolicy;
 import utils.MyScreenRecorder;
 import utils.TestBase;
 
 public class Tests extends TestBase {
-    @Test
+
+    @JiraPolicy(logTicketReady=true)
+    @Test(priority=1, enabled=true)
     public void testGenderlInformation() throws Exception {
         MyScreenRecorder.startRecording("Start Gentral Information ");
         LoginPage.setUserName("admin");

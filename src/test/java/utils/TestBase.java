@@ -56,16 +56,22 @@ public class TestBase extends PageBase {
     public void endTest(ITestResult result) throws Exception {
         if(!result.isSuccess()){
             extentReport.endTest(extentTest);
-            extentTest.log(LogStatus.FAIL,extentTest.addScreenCapture(ExtentReportFunctions.getFilePath()));
-            extentTest.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed", result.getThrowable().getMessage());
-            extentReport.endTest(extentTest);
+            if (result.getStatus() == ITestResult.FAILURE) {
+                extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(ExtentReportFunctions.getFilePath()));
+                extentTest.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed", result.getThrowable().getMessage());
+            }
+              else if (result.getStatus() == ITestResult.SKIP) {
+                extentTest.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
+            } else {
+                extentTest.log(LogStatus.PASS, "Test passed");
+            }
 
         }
         LOGGER.info("Closing Browser");
         PageBase.closeDriver();
         LOGGER.info("Browser Closed");
 //        SendEmail.SendEmail();
-//        LOGGER.info("Email successfully Send");
+ //       LOGGER.info("Email successfully Send");
 
     }
 

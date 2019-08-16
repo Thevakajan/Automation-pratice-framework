@@ -21,7 +21,7 @@ public class ExtentReportFunctions extends PageBase {
 
     public static String getFilePath() {
 
-        String filename = getTimeStamp("yyyy-mm-dd_hh-mm-ss")+".jpg";
+        String filename = getTimeStamp("yyyy-mm-dd_hh-mm-ss")+".png";
         File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
         File file = new File(screenShotFolderPath + filename);
