@@ -1,6 +1,7 @@
 package tests;
 
 
+import net.rcarz.jiraclient.JiraException;
 import org.apache.commons.lang.exception.ExceptionUtils;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -23,7 +24,7 @@ public class TestJiraListener implements ITestListener {
 	}
 
 	@Override
-	public void onTestFailure(ITestResult result) {
+	public void onTestFailure(ITestResult result){
 
 		JiraPolicy jiraPolicy = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraPolicy.class);
 		boolean isTicketReady = jiraPolicy.logTicketReady();
@@ -37,7 +38,7 @@ public class TestJiraListener implements ITestListener {
 			String issueDescription = result.getThrowable().getMessage() + "\n";
 			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
 
-			jiraSp.createJiraTicket("Bug", issueSummary, issueDescription, "Theva Kajan");
+			jiraSp.createJiraTicket("Bug", issueSummary, issueDescription, "Thanushan Raveendran","Theva Kajan");
 		}
 
 	}

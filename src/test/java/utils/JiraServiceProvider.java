@@ -7,6 +7,7 @@ public class JiraServiceProvider {
 
 	public JiraClient jira;
 	public String project;
+//	public String assignee;
 
 	public JiraServiceProvider(String jiraUrl, String username, String password, String project) {
 		BasicCredentials creds = new BasicCredentials(username, password);
@@ -14,12 +15,13 @@ public class JiraServiceProvider {
 		this.project = project;
 	}
 
-	public void createJiraTicket(String issueType, String summary, String description, String reporterName) {
+	public void createJiraTicket(String issueType, String summary, String description,String assignee, String reporterName) {
 
 		try {
 			FluentCreate fleuntCreate = jira.createIssue(project, issueType);
 			fleuntCreate.field(Field.SUMMARY, summary);
 			fleuntCreate.field(Field.DESCRIPTION, description);
+//			fleuntCreate.field(Field.ASSIGNEE, assignee);
 			Issue newIssue = fleuntCreate.execute();
 			System.out.println("new issue created in jira with ID: " + newIssue);
 
