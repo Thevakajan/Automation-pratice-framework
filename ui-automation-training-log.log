@@ -473,3 +473,15 @@
 2019-08-16 13:58:09 INFO  TestBase:81 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=FAILURE method=Tests.testGenderlInformation()[pri:1, instance:tests.Tests@2e4b8173] output={null}]
 2019-08-16 13:58:10 INFO  TestBase:70 - Closing Browser
 2019-08-16 13:58:10 INFO  TestBase:72 - Browser Closed
+2019-08-19 09:52:42 INFO  TestBase:32 - Initiate Browser
+2019-08-19 09:52:52 INFO  TestBase:41 - Browser Initiated
+2019-08-19 09:52:52 INFO  TestBase:53 - Test name: testGenderlInformation
+2019-08-19 09:52:53 INFO  TestBase:81 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=FAILURE method=Tests.testGenderlInformation()[pri:1, instance:tests.Tests@1622f1b] output={null}]
+2019-08-19 09:52:53 INFO  TestBase:70 - Closing Browser
+2019-08-19 09:52:54 INFO  TestBase:72 - Browser Closed
+2019-08-19 09:54:33 INFO  TestBase:32 - Initiate Browser
+2019-08-19 09:54:41 INFO  TestBase:41 - Browser Initiated
+2019-08-19 09:54:41 INFO  TestBase:53 - Test name: testGenderlInformation
+2019-08-19 09:54:44 INFO  TestBase:81 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=FAILURE method=Tests.testGenderlInformation()[pri:1, instance:tests.Tests@2e4b8173] output={null}]
+2019-08-19 09:54:45 INFO  TestBase:70 - Closing Browser
+2019-08-19 09:54:45 INFO  TestBase:72 - Browser Closed
