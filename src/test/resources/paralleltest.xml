@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Default suite" parallel="methods" verbose="3">
     <listeners>
-        <listener class-name="utils.TestJiraListener" />
+<!--        <listener class-name="utils.TestJiraListener" />-->
+<!--        <listener class-name="com.test.qa.utils.TestListener" />-->
+
     </listeners>
     <test name="my hub spot test chrome" parallel="none" thread-count="5">
         <parameter name="browser" value="chrome" />

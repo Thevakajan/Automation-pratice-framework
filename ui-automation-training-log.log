@@ -491,3 +491,22 @@
 2019-10-11 11:10:52 INFO  TestBase:81 - Executed test case name:testGenderlInformation Execution Results : [TestResult name=testGenderlInformation status=FAILURE method=Tests.testGenderlInformation()[pri:1, instance:tests.Tests@61230f6a] output={null}]
 2019-10-11 11:10:52 INFO  TestBase:70 - Closing Browser
 2019-10-11 11:10:53 INFO  TestBase:72 - Browser Closed
+2020-03-30 21:35:24 INFO  TestBase:37 - Initiate Browser
+2020-03-30 21:39:40 INFO  TestBase:37 - Initiate Browser
+2020-03-30 21:41:57 INFO  TestBase:37 - Initiate Browser
+2020-03-30 21:41:58 INFO  TestBase:75 - Closing Browser
+2020-03-30 21:42:32 INFO  TestBase:37 - Initiate Browser
+2020-03-30 21:42:33 INFO  TestBase:75 - Closing Browser
+2020-03-30 21:45:46 INFO  TestBase:37 - Initiate Browser
+2020-03-30 21:45:47 INFO  TestBase:75 - Closing Browser
+2020-03-30 21:46:03 INFO  TestBase:37 - Initiate Browser
+2020-03-30 21:46:04 INFO  TestBase:75 - Closing Browser
+2020-03-30 21:53:27 INFO  TestBase:37 - Initiate Browser
+2020-03-30 21:53:28 INFO  TestBase:75 - Closing Browser
+2020-03-30 21:55:07 INFO  TestBase:37 - Initiate Browser
+2020-03-30 21:55:54 INFO  TestBase:37 - Initiate Browser
+2020-03-30 22:06:17 INFO  TestBase:37 - Initiate Browser
+2020-03-30 22:07:22 INFO  TestBase:37 - Initiate Browser
+2020-03-31 12:42:43 INFO  TestBase:37 - Initiate Browser
+2020-03-31 12:44:31 INFO  TestBase:37 - Initiate Browser
+2020-03-31 12:45:19 INFO  TestBase:37 - Initiate Browser

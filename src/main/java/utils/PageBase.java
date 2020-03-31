@@ -1,51 +1,75 @@
 package utils;
 
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 public class PageBase {
 
     public static WebDriver driver;
     private static String baseUrl="https://opensource-demo.orangehrmlive.com/";
-    private static String driverPath="src"+ File.separator+"test"+ File.separator+"resources"+ File.separator+"driver"+File.separator;
+
+    public static String webDriverLocation="src"+ File.separator+"test"+ File.separator+"resources"+ File.separator+"driver"+File.separator;
     protected static String uploadFilepath = System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"fileUpload";
-    public static String VideoReording_FOLDER = System.getProperty("user.dir") + "/src/test/resources/VideoReording/";
-    private static String osType=System.getProperty("os.Type",Constants.WINDOWS);
-    private static String driverType=System.getProperty("browser.type",Constants.CHROME);
+    protected static String downloadFilepath = System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"fileDownload";
+    protected static String VideoReording_FOLDER = System.getProperty("user.dir") + "/src/test/resources/VideoReording/";
+    protected static String osType=System.getProperty("os.Type",Constants.UBUNTU);
+    protected static String driverType = System.getProperty("browser.type", Constants.CHROME);
 
     public static void initiateDriver() throws MalformedURLException {
-        if (Constants.CHROME.equals(driverType)) {
-            if (osType.equals(Constants.UBUNTU)) {
-                System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver");
-            } else
-                System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
+        staticWait(1);
+        switch (driverType) {
+            case Constants.CHROME:
+                if(osType.equals(Constants.WINDOWS))
+                    System.setProperty("webdriver.chrome.driver", webDriverLocation + "chromedriver");
+                else
+                    System.setProperty("webdriver.chrome.driver", webDriverLocation + "chromedriver.exe");
 
-            driver = new ChromeDriver();
+                HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+                chromePrefs.put("profile.default_content_settings.popups", 0);
+               chromePrefs.put("download.default_directory", downloadFilepath);
+                ChromeOptions optionsChrome = new ChromeOptions();
+                optionsChrome.setExperimentalOption("prefs", chromePrefs);
+                DesiredCapabilities capChrome = DesiredCapabilities.chrome();
+                capChrome.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+                capChrome.setCapability(ChromeOptions.CAPABILITY, optionsChrome);
 
-//
-//                    case Constants.FIREFOX:
-//                    if(osType.equals(Constants.UBUNTU))
-//                        System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver");
-//                    else System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver.exe");
-//                    driver = new FirefoxDriver();
-//                    break;
-//
-//                case Constants.IE:
-//                if(osType.equals(Constants.UBUNTU))
-//                    System.setProperty("webdriver.gecko.driver", driverPath + "IEDriverServer.exe");
-//
-//                driver = new InternetExplorerDriver();
-//                break;
+                driver = new ChromeDriver(capChrome);
+                break;
+            case Constants.FIREFOX:
+                if(osType.equals(Constants.UBUNTU))
+                    System.setProperty("webdriver.gecko.driver", webDriverLocation + "geckodriver");
+                else
+                    System.setProperty("webdriver.gecko.driver", webDriverLocation + "geckodriver.exe");
+
+                HashMap<String, Object> fireFoxPrefs = new HashMap<String, Object>();
+                FirefoxOptions optionsFireFox = new FirefoxOptions();
+                optionsFireFox.addPreference("profile.default_content_settings.popups", 0);
+                optionsFireFox.addPreference("download.prompt_for_download", "false");
+                optionsFireFox.addPreference("download.default_directory", downloadFilepath);
+                DesiredCapabilities capFireFox = DesiredCapabilities.firefox();
+                capFireFox.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+                capFireFox.setCapability(ChromeOptions.CAPABILITY, optionsFireFox);
+
+                driver = new FirefoxDriver(capFireFox);
+                break;
+
         }
         getDriver().manage().window().maximize();
         driver.manage().deleteAllCookies();
@@ -133,5 +157,18 @@ public class PageBase {
     {
         WebDriverWait wait = new WebDriverWait(getDriver(), 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+    }
+    public String getScreenshot() {
+        File src = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
+        String path = System.getProperty("user.dir") + "/src/test/resources//screenshots/" + System.currentTimeMillis() + ".png";
+        File destination = new File(path);
+
+        try {
+            FileUtils.copyFile(src, destination);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return path;
     }
 }

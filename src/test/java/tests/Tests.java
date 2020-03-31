@@ -10,7 +10,7 @@ import utils.TestBase;
 
 public class Tests extends TestBase {
 
-    @JiraPolicy(logTicketReady=true)
+//    @JiraPolicy(logTicketReady=true)
     @Test(priority=1, enabled=true)
     public void testGenderlInformation() throws Exception {
         MyScreenRecorder.startRecording("Start Gentral Information ");

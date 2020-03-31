@@ -3,8 +3,11 @@ package utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -12,6 +15,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 
@@ -70,8 +75,8 @@ public class TestBase extends PageBase {
         LOGGER.info("Closing Browser");
         PageBase.closeDriver();
         LOGGER.info("Browser Closed");
-//        SendEmail.SendEmail();
- //       LOGGER.info("Email successfully Send");
+        SendEmail.SendEmail();
+        LOGGER.info("Email successfully Send");
 
     }
 
@@ -88,4 +93,5 @@ public class TestBase extends PageBase {
         extentReport.flush();
 
     }
+
 }
